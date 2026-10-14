@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lunarmag"
+version = "1.1.0.dev0"
+description = "Rover magnetometry of magnetized lunar bedrock: forward models, inversions, error budgets and the thesis figures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Christopher A. Zareck" }]
+keywords = ["lunar paleomagnetism", "rover magnetometry", "potential-field inversion", "SimPEG"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Private :: Do Not Upload",
+]
+# Pinned to the versions that produced results/ (see environment.yml); other versions may change last digits.
+dependencies = [
+    "numpy>=2.2,<2.3",
+    "scipy>=1.15,<1.16",
+    "matplotlib>=3.10,<3.11",
+    "simpeg==0.24.0",
+    "discretize==0.11.3",
+    "choclo==0.3.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+notebook = ["jupyterlab", "ipykernel", "nbconvert"]
+
+[project.scripts]
+lunarmag = "lunarmag.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lunarmag = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"
+markers = [
+    "slow: minutes or more (full notebook rerun, a09 tilt parts); run with `make test-all` or `pytest -m slow`",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+]

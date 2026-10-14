@@ -1,0 +1,11 @@
+{
+ "description": "Part 1 of notebook/reproduce_paper.ipynb: one noise draw, np.random.default_rng(0), drive-around at 1 m, sigma_B = 0.5 nT per axis, true M = (0, 0, -2.4e-3) A/m",
+ "n_measurements": 2399,
+ "M_rec_A_per_m": [
+  -9.791174392523197e-05,
+  0.00017585885760980135,
+  -0.0025689980095039496
+ ],
+ "dir_err_deg": 4.479917603333004,
+ "dM_abs_pct": 7.3696223287415625
+}

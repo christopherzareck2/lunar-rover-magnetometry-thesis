@@ -1,0 +1,32 @@
+{
+ "product_id": "M1345757107L",
+ "edr_file": "M1345757107LE.IMG",
+ "pds_path": "LRO-L-LROC-2-EDR-V1.0/LROLRC_0043C/DATA/ESM4/2020154/NAC/M1345757107LE.IMG",
+ "start_time": "2020-06-02 17:10:40.236",
+ "field_m": 200.0,
+ "size_px": [
+  600,
+  600
+ ],
+ "m_per_px": 0.3333333333333333,
+ "native_m_per_px": [
+  0.86,
+  0.9
+ ],
+ "resolution_m": 0.882,
+ "incidence_deg": 17.61,
+ "emission_deg": 1.73,
+ "phase_deg": 19.25,
+ "scene_center_lat_lon": [
+  4.02,
+  24.74
+ ],
+ "crop_center_edr_column_line": [
+  4008,
+  21856
+ ],
+ "scale_bar_m": 50,
+ "north_deg_cw_from_up": 1.9499999999999886,
+ "sun_deg_cw_from_up": 108.0,
+ "processing": "column-offset (destriping) correction of the raw EDR; horizontal mirror; resampled to square pixels (Lanczos); linear stretch between the 0.5 and 99.7 percentiles, gamma (0.85; for the high-Sun pit image, chosen so the median pixel is mid-grey)"
+}

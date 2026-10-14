@@ -1,0 +1,23 @@
+{
+ "source": "LOLA LDEM_64 (LRO-L-LOLA-4-GDR-V1.0, V3.1)",
+ "window_lon_east_deg": [
+  -65.0,
+  82.0
+ ],
+ "window_lat_deg": [
+  -42.0,
+  42.0
+ ],
+ "size_px": [
+  1950,
+  1114
+ ],
+ "projection": "simple cylindrical (plate carree)",
+ "light_azimuth_deg": 315.0,
+ "light_altitude_deg": 35.0,
+ "vertical_exaggeration": 3.0,
+ "stretch_percentiles": [
+  0.5,
+  99.5
+ ]
+}

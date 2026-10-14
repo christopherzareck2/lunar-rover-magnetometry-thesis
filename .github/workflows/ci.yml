@@ -1,0 +1,41 @@
+# Continuous integration: the fast test suite and a figure smoke test.
+# It never publishes anything. On Linux a few Monte Carlo summary statistics differ from the stored (macOS) values
+# by up to about 1e-4 relative, so the comparison uses LUNARMAG_RTOL=1e-3 below; on the original machine they match exactly.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash -el {0}          # login shell so the conda env is active
+    env:
+      MPLBACKEND: Agg
+      # Stored results were produced on Apple silicon; on Linux allow last-digit BLAS differences.
+      LUNARMAG_RTOL: "1e-3"
+      LUNARMAG_ATOL: "1e-5"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          environment-file: environment.yml
+          activate-environment: lunar-mag
+          miniforge-version: latest
+      - name: Environment
+        run: python -m lunarmag info
+      - name: Fast tests (regression, analytic checks, quoted numbers, figures)
+        run: python -m pytest -m "not slow"
+      - name: Figure smoke test (draw every thesis figure into a scratch folder)
+        run: |
+          python -m lunarmag figures --out "$RUNNER_TEMP/figures"
+          python -m lunarmag pdfa --no-verapdf "$RUNNER_TEMP"/figures/*.pdf

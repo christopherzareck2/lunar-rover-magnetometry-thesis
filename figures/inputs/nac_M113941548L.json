@@ -1,0 +1,32 @@
+{
+ "product_id": "M113941548L",
+ "edr_file": "M113941548LE.IMG",
+ "pds_path": "LRO-L-LROC-2-EDR-V1.0/LROLRC_0001/DATA/MAP/2009331/NAC/M113941548LE.IMG",
+ "start_time": "2009-11-27 06:11:20.987",
+ "field_m": 500.0,
+ "size_px": [
+  600,
+  600
+ ],
+ "m_per_px": 0.8333333333333334,
+ "native_m_per_px": [
+  0.46,
+  0.55
+ ],
+ "resolution_m": 0.503,
+ "incidence_deg": 59.35,
+ "emission_deg": 1.69,
+ "phase_deg": 60.97,
+ "scene_center_lat_lon": [
+  24.65,
+  2.47
+ ],
+ "crop_center_edr_column_line": [
+  2100,
+  5900
+ ],
+ "scale_bar_m": 100,
+ "north_deg_cw_from_up": -1.8500000000000227,
+ "sun_deg_cw_from_up": 106.9,
+ "processing": "column-offset (destriping) correction of the raw EDR; horizontal mirror; resampled to square pixels (Lanczos); linear stretch between the 0.5 and 99.7 percentiles, gamma (0.85; for the high-Sun pit image, chosen so the median pixel is mid-grey)"
+}

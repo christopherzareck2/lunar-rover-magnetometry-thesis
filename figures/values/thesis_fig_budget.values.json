@@ -1,0 +1,264 @@
+{
+ "rows": [
+  {
+   "all_sources_deg": [
+    2.6683889274065775,
+    3.1782930277443615
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_none",
+   "label": "Noise only",
+   "noise_free_deg": [
+    0.0,
+    1.4083158963032557e-07
+   ]
+  },
+  {
+   "all_sources_deg": [
+    2.655519630319322,
+    3.6491851701897167
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_site",
+   "label": "Site field",
+   "noise_free_deg": [
+    0.3276686448383685,
+    1.521448657878282
+   ]
+  },
+  {
+   "all_sources_deg": [
+    5.575292152601438,
+    6.823399926119646
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_pose",
+   "label": "Pose",
+   "noise_free_deg": [
+    4.36502142259115,
+    6.379257036859718
+   ]
+  },
+  {
+   "all_sources_deg": [
+    9.232604092422276,
+    15.158203541553956
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_burial",
+   "label": "Burial ($b \\leq 1$ m)",
+   "noise_free_deg": [
+    8.638355952037486,
+    14.612168105324054
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.954397444666933,
+    7.854701060780647
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_drift",
+   "label": "Drift (0.03 nT)",
+   "noise_free_deg": [
+    0.0,
+    1.593163312987143e-07
+   ]
+  },
+  {
+   "all_sources_deg": [
+    2.8095209310416687,
+    3.889938146905675
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_tilt",
+   "label": "Tilt (0.05 nT)",
+   "noise_free_deg": [
+    0.2742193132963343,
+    1.2288765480433212
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.50637410136436,
+    4.276465276339293
+   ],
+   "group": "One source at a time (loops 0.5 m off center)",
+   "key": "Z_single_induced",
+   "label": "Induced magnetization",
+   "noise_free_deg": [
+    1.8650277633006607,
+    2.376732574190819
+   ]
+  },
+  {
+   "all_sources_deg": [
+    11.430559687862605,
+    15.266928338698563
+   ],
+   "group": "All sources together",
+   "key": "U_budget_full_offcentre",
+   "label": "Full tolerances, off center",
+   "noise_free_deg": [
+    10.448406204125973,
+    14.673589755843183
+   ]
+  },
+  {
+   "all_sources_deg": [
+    6.314189925808139,
+    9.823910749987327
+   ],
+   "group": "All sources together",
+   "key": "V_budget_half_offcentre",
+   "label": "Half, off center",
+   "noise_free_deg": [
+    5.514660715595685,
+    8.961189561831546
+   ]
+  },
+  {
+   "all_sources_deg": [
+    6.720298897436215,
+    8.459726596354363
+   ],
+   "group": "All sources together",
+   "key": "F2_half_offcentre_root",
+   "label": "Half, off center, root fitted",
+   "noise_free_deg": [
+    2.9224473626640544,
+    4.096751365174581
+   ]
+  },
+  {
+   "all_sources_deg": [
+    4.209594529572161,
+    6.034367143600821
+   ],
+   "group": "All sources together",
+   "key": "Y_budget_quarter_offcentre",
+   "label": "Quarter, off center",
+   "noise_free_deg": [
+    3.006941684227517,
+    4.501236880841169
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.419638027917685,
+    5.7011773483897015
+   ],
+   "group": "All sources together",
+   "key": "X_budget_half_centred",
+   "label": "Half, centered",
+   "noise_free_deg": [
+    1.2295297013700188,
+    1.9333793420809726
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.7486005344266458,
+    5.597043990720577
+   ],
+   "group": "Requirement set",
+   "key": "REQ_a_dx0.1_b0.5",
+   "label": "$b \\leq 0.5$ m, loops 0.1 m off",
+   "noise_free_deg": [
+    1.5643227334112308,
+    3.3036764692046345
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.720314175839701,
+    7.1209111931710085
+   ],
+   "group": "Requirement set",
+   "key": "REQ_b_dx0.1_b1",
+   "label": "$b \\leq 1$ m, loops 0.1 m off",
+   "noise_free_deg": [
+    2.2090397772563137,
+    5.9006133527989935
+   ]
+  },
+  {
+   "all_sources_deg": [
+    4.150951309893334,
+    5.811317753510965
+   ],
+   "group": "Requirement set",
+   "key": "REQ_c_dx0.5_b0",
+   "label": "No buried part ($b = 0$), 0.5 m off",
+   "noise_free_deg": [
+    2.051195770375654,
+    3.8776887931578794
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.203891657672027,
+    4.348357939395005
+   ],
+   "group": "Requirement set",
+   "key": "y6_03:Requirement set, burial known",
+   "label": "Known depth $b \\leq 1$ m, 0.5 m off",
+   "noise_free_deg": [
+    1.9934470644100166,
+    2.7325321143849393
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.0485862625232576,
+    4.855774123445877
+   ],
+   "group": "Requirement set, both mitigations",
+   "key": "REQF_a_dx0.1_b0.5",
+   "label": "$b \\leq 0.5$ m, loops 0.1 m off",
+   "noise_free_deg": [
+    1.892113525175071,
+    3.5821427520533877
+   ]
+  },
+  {
+   "all_sources_deg": [
+    3.2366803053118796,
+    6.9049359503058465
+   ],
+   "group": "Requirement set, both mitigations",
+   "key": "REQF_b_dx0.1_b1",
+   "label": "$b \\leq 1$ m, loops 0.1 m off",
+   "noise_free_deg": [
+    2.097847962690855,
+    5.906770195855879
+   ]
+  },
+  {
+   "all_sources_deg": [
+    2.9803286129091076,
+    4.803919472524222
+   ],
+   "group": "Requirement set, both mitigations",
+   "key": "REQF_c_dx0.5_b0",
+   "label": "No buried part ($b = 0$), 0.5 m off",
+   "noise_free_deg": [
+    1.956800111495828,
+    3.625271475547447
+   ]
+  },
+  {
+   "all_sources_deg": [
+    2.3593715225266254,
+    3.677841603110826
+   ],
+   "group": "Requirement set, both mitigations",
+   "key": "y6_03:Mitigated set, burial known",
+   "label": "Known depth $b \\leq 1$ m, 0.5 m off",
+   "noise_free_deg": [
+    1.663057063602865,
+    2.721766761140391
+   ]
+  }
+ ]
+}

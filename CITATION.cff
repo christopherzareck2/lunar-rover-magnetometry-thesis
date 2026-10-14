@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the thesis. If you use the simulations or results that come from the companion paper, please also cite the paper and its code release."
+type: software
+title: "Lunar Rover Magnetometry: Requirements for Recovering the Remanent Magnetization of Exposed Mare Bedrock"
+abstract: "Code, stored results and figures for an SM thesis on recovering the natural remanent magnetization of exposed lunar mare bedrock with a rover-mounted magnetometer: forward models, inversions, error budgets, requirements and the thesis figures."
+authors:
+  - family-names: Zareck
+    given-names: Christopher A.
+repository-code: "https://github.com/christopherzareck2/lunar-rover-magnetometry-thesis"
+license: MIT
+keywords:
+  - lunar paleomagnetism
+  - rover magnetometry
+  - potential-field inversion
+  - SimPEG
+preferred-citation:
+  type: thesis
+  thesis-type: "S.M. thesis"
+  title: "Lunar Rover Magnetometry: Requirements for Recovering the Remanent Magnetization of Exposed Mare Bedrock"
+  authors:
+    - family-names: Zareck
+      given-names: Christopher A.
+  institution:
+    name: "Massachusetts Institute of Technology"
+  department: "Department of Aeronautics and Astronautics"
+  year: 2027
+  notes: "In preparation. The PDF will be available from DSpace@MIT."
+references:
+  - type: article
+    title: "Lunar Rover Magnetometry: Recovering Paleofield Intensity and Direction From Magnetized Bedrock"
+    authors:
+      - family-names: Narrett
+        given-names: Isaac S.
+      - family-names: Zareck
+        given-names: Christopher A.
+      - family-names: Weiss
+        given-names: Benjamin P.
+      - family-names: Hoffman
+        given-names: Jeffrey A.
+    journal: "The Planetary Science Journal"
+    year: 2026
+    notes: "In preparation. Update with volume, article number and DOI on publication."
+  - type: software
+    title: "lunar-bedrock-magnetometry: code for the companion paper (release v1.0.0)"
+    authors:
+      - family-names: Narrett
+        given-names: Isaac S.
+      - family-names: Zareck
+        given-names: Christopher A.
+      - family-names: Weiss
+        given-names: Benjamin P.
+      - family-names: Hoffman
+        given-names: Jeffrey A.
+    version: "v1.0.0"
+    repository-code: "https://github.com/christopherzareck2/lunar-bedrock-magnetometry"

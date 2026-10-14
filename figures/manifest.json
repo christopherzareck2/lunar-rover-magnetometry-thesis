@@ -1,0 +1,381 @@
+{
+ "description": "Thesis figures: file, the code that draws it, the stored inputs it reads (sha256), and the sha256 of the figure PDF (and of its plotted values for the lunarmag figures). Regenerate with `make figures`. Figure numbers are those of the thesis (kept from the previous manifest).",
+ "environment": {
+  "lunarmag": "1.1.0.dev0",
+  "python": "3.10.18",
+  "numpy": "2.2.6",
+  "matplotlib": "3.10.6"
+ },
+ "figures": [
+  {
+   "figure": "3.1",
+   "label": "fig:outcrop_geometry",
+   "title": "Isolated outcrop model and survey paths",
+   "file": "thesis/MIT-thesis-template/figures/fig01_isolated_outcrop_geometry.pdf",
+   "script": "src/lunarmag/figures/geometry_figs.py (draw_outcrop_geometry)",
+   "command": "lunarmag figures --only 3.1",
+   "results": {},
+   "plotted_values": "figures/values/fig01_isolated_outcrop_geometry.values.json",
+   "plotted_values_sha256": "d0347cc1e0d763bc95933ef495789607c90269597e424edd8f610d420616927b",
+   "pdf_sha256": "b7fec3b4ae52a0b5f7840885aa842980e6ea30c530c48864458c64cc9aa75f8c",
+   "png": "figures/preview/fig01_isolated_outcrop_geometry.png",
+   "width": "full",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 4,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "3.1"
+  },
+  {
+   "figure": "3.2",
+   "label": "fig:skatepark_geometry",
+   "title": "Skate park scene",
+   "file": "thesis/MIT-thesis-template/figures/fig02_skatepark_geometry.pdf",
+   "script": "src/lunarmag/figures/geometry_figs.py (draw_skatepark_geometry)",
+   "command": "lunarmag figures --only 3.2",
+   "results": {},
+   "plotted_values": "figures/values/fig02_skatepark_geometry.values.json",
+   "plotted_values_sha256": "cd46a53541650f743b7703c6d07da8a214735fd669f3ecec89781fa9894dd3bb",
+   "pdf_sha256": "6516f52757ae35e9d33d574408577a4061b29e0290944846d0759801d27558c5",
+   "png": "figures/preview/fig02_skatepark_geometry.png",
+   "width": "full",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 4,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "3.2"
+  },
+  {
+   "figure": "3.3",
+   "label": "fig:threelayer_geometry",
+   "title": "Three-layer wall model and traverses",
+   "file": "thesis/MIT-thesis-template/figures/fig03_three_layer_geometry.pdf",
+   "script": "src/lunarmag/figures/geometry_figs.py (draw_threelayer_geometry)",
+   "command": "lunarmag figures --only 3.3",
+   "results": {},
+   "plotted_values": "figures/values/fig03_three_layer_geometry.values.json",
+   "plotted_values_sha256": "2b25890c673457d53623271f8395cadc6503785d9f6704a6e20236d17a5a35d9",
+   "pdf_sha256": "0c4d32d30243c7bca37942de68161a4783c567f9158c7b1e8aa15b884272321c",
+   "png": "figures/preview/fig03_three_layer_geometry.png",
+   "width": "full",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 4,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "3.3"
+  },
+  {
+   "figure": "4.1",
+   "label": "fig:detection_envelope",
+   "title": "Recovery vs NRM field strength",
+   "file": "thesis/MIT-thesis-template/figures/fig04_detection_envelope.pdf",
+   "script": "src/lunarmag/figures/results_figs.py (draw_detection_envelope)",
+   "command": "lunarmag figures --only 4.1",
+   "results": {
+    "results/analysis/a02b_detection_sweep_N1000.json": "a36a182de0af6fcf72a46e71414ab502c303e0c65928b0ad8bc0b8a1d76d0204"
+   },
+   "plotted_values": "figures/values/fig04_detection_envelope.values.json",
+   "plotted_values_sha256": "41f4e0f52e6468f2a36295ac7e45f913a3f40ee50166fe9a882670b4db859f06",
+   "pdf_sha256": "af2afc79445b808777e0c61228493cbfd7aedac467ab2ddea846a93a5dd22f73",
+   "png": "figures/preview/fig04_detection_envelope.png",
+   "width": "0.7",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 4,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "4.1"
+  },
+  {
+   "figure": "4.2",
+   "label": "fig:lidar_sensitivity",
+   "title": "Sensitivity to imaging mis-pose",
+   "file": "thesis/MIT-thesis-template/figures/fig05_lidar_sensitivity.pdf",
+   "script": "src/lunarmag/figures/results_figs.py (draw_lidar_sensitivity)",
+   "command": "lunarmag figures --only 4.2",
+   "results": {
+    "results/analysis/a02_isolated_outcrop_paper_geometry.json": "5867c09a983cc045cd4399cfb82292d7d642ffac6287a8a777101d9a6569a0b6"
+   },
+   "plotted_values": "figures/values/fig05_lidar_sensitivity.values.json",
+   "plotted_values_sha256": "b4e267c4c362d2cf8970f091d964fd6f8e0f739e0a60c5ebcc9ddeb8fc68bb05",
+   "pdf_sha256": "b11aa2610019a147be8f2e785e5a3cb2a04a0597dd1d21f84a50f9e876e4b0d0",
+   "png": "figures/preview/fig05_lidar_sensitivity.png",
+   "width": "full",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 3,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "4.2"
+  },
+  {
+   "figure": "4.3",
+   "label": "fig:skatepark_recovery",
+   "title": "Central-outcrop recovery vs neighbor gap",
+   "file": "thesis/MIT-thesis-template/figures/fig06_skatepark_recovery.pdf",
+   "script": "src/lunarmag/figures/results_figs.py (draw_skatepark_recovery)",
+   "command": "lunarmag figures --only 4.3",
+   "results": {
+    "results/engine/skatepark_1cm_dr_sweep_results.json": "ad5fb6d6b4d674ad1007ca0189c0093e53b181653071b138245940c66a2d35bf"
+   },
+   "plotted_values": "figures/values/fig06_skatepark_recovery.values.json",
+   "plotted_values_sha256": "c93b5d7f7aaf94b174bb18e345aeb20e3c7df463afb1f3257587e76094f59d46",
+   "pdf_sha256": "96f5331f590c3ced02916079129cce433b7981205ed70ecb5f59f4780e1a245d",
+   "png": "figures/preview/fig06_skatepark_recovery.png",
+   "width": "0.7",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 4,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "4.3"
+  },
+  {
+   "figure": "4.4",
+   "label": "fig:second_traverse",
+   "title": "Three-flow recovery vs second-traverse height",
+   "file": "thesis/MIT-thesis-template/figures/fig07_second_traverse_height.pdf",
+   "script": "src/lunarmag/figures/results_figs.py (draw_second_traverse_height)",
+   "command": "lunarmag figures --only 4.4",
+   "results": {
+    "results/engine/elevated_traverse_height_sweep_results.json": "e398042f9429c3204b1506beeb1ece85f94d7d8b1994778f07bebe4f727837be"
+   },
+   "plotted_values": "figures/values/fig07_second_traverse_height.values.json",
+   "plotted_values_sha256": "89f6092a59df4d14dc1ef3c922a9a923217addcf90c58dd42b98284a3f587dfe",
+   "pdf_sha256": "ca0e1668fe77c81f29165b0259f234130b0a153bfba9e38e061c7ca8287a8140",
+   "png": "figures/preview/fig07_second_traverse_height.png",
+   "width": "0.7",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 4,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "4.4"
+  },
+  {
+   "figure": "5.1",
+   "label": "fig:noise_requirement",
+   "title": "Correlated noise and slow drift",
+   "file": "thesis/MIT-thesis-template/figures/fig08_noise_requirement.pdf",
+   "script": "src/lunarmag/figures/results_figs.py (draw_noise_requirement)",
+   "command": "lunarmag figures --only 5.1",
+   "results": {
+    "results/analysis/a06_isolated_robustness.json": "afb6e8f7ed032e2118a8a9b3c14c280f11237852c918d5ae35a3508baa026ed4"
+   },
+   "plotted_values": "figures/values/fig08_noise_requirement.values.json",
+   "plotted_values_sha256": "22d155a0bf73229d4b11a0855d7ac06531bb16152a6581a9cf3b91d7af6a8116",
+   "pdf_sha256": "8439272dea3cddcad078c91d6a83c35af384dde8de0918c7e179166d9a7f6848",
+   "png": "figures/preview/fig08_noise_requirement.png",
+   "width": "full",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 5,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "5.1"
+  },
+  {
+   "figure": "5.2",
+   "label": "fig:budget",
+   "title": "Combined error budget",
+   "file": "thesis/MIT-thesis-template/figures/thesis_fig_budget.pdf",
+   "script": "src/lunarmag/figures/results_figs.py (draw_budget)",
+   "command": "lunarmag figures --only 5.2",
+   "results": {
+    "results/analysis/a09_systematics.json": "4c1c137910d96368efdc6105e29e5c9a35f7e8478df06c0cc40e5596400a2546"
+   },
+   "plotted_values": "figures/values/thesis_fig_budget.values.json",
+   "plotted_values_sha256": "30e078af696739515c6537b3e522b4158d4d4b8110d2b5241cbc8b6e4b5e9960",
+   "pdf_sha256": "689322b1793be985ba3f20f1f250f034ddf260d93460b802f8647fb930a78866",
+   "png": "figures/preview/thesis_fig_budget.png",
+   "width": "0.9",
+   "pdfa1b_ready": true,
+   "pdfa": {
+    "cidset_added": 5,
+    "transparency": 0,
+    "fonts_missing_cidset": 0
+   },
+   "figure_id": "5.2"
+  }
+ ],
+ "external_figures": [
+  {
+   "figure": "1.1",
+   "label": "fig:intro_target",
+   "title": "The target: LROC NAC and Apollo 15 imagery",
+   "file": "thesis/MIT-thesis-template/figures/ch1_target_imagery.pdf",
+   "script": "figures/scripts/fig_target_imagery.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/inputs/nac_M113941548L.png": "9c50584674c36baed88c2853c0e264b11ea3c6a6435402e25364eb375343f6fe",
+    "figures/inputs/nac_M113941548L.json": "3f11e9157feb3c67aada4758584e57c93d2b23f50c2118bb92675ed3d57cf4da",
+    "figures/inputs/nac_M1345757107L.png": "f0c942db81c9598ab811174b7317126e38a21ee447d329982b97b84c5d14805b",
+    "figures/inputs/nac_M1345757107L.json": "a60f8a055d1c77c99ce05c2a956f8a786945710c2a54b3d0eb56a6ac9d52e4b3",
+    "figures/inputs/apollo15_AS15-85-11451.png": "3a18ecffe39421942995f1f5551582e7137349fb16f2e317c1159fd42951c271"
+   },
+   "pdf_sha256": "664bf04acc164272d12826773f3661a1cc232306fcbc50ffd2b05c2fea4e221d",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "5.3",
+   "label": "fig:sobol",
+   "title": "Sobol indices of the noise-free direction error",
+   "file": "thesis/MIT-thesis-template/figures/ch5_sobol_indices.pdf",
+   "script": "studies/fig_sobol.py",
+   "command": "make figures",
+   "source_pdf": "studies/figures/study_sobol_indices.pdf",
+   "results": {
+    "studies/results/sobol.json": "904f1c12167ce9cb983eca98597ff5d22d27dac543f901a26cfc1a4695794aec"
+   },
+   "pdf_sha256": "441b2b5fd0c917859e808e148e0d81806854a576c2eaa5be1907c5ae1667a317",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "5.4",
+   "label": "fig:flow_mean",
+   "title": "Flow-mean direction error and alpha95 coverage",
+   "file": "thesis/MIT-thesis-template/figures/ch5_flow_mean.pdf",
+   "script": "studies/fig_flow_mean.py",
+   "command": "make figures",
+   "source_pdf": "studies/figures/study_flow_mean.pdf",
+   "results": {
+    "studies/results/flow_mean.json": "1173c89690e2c6f820204c08a1a0db67888be251368963fc4b35d2e735b02500"
+   },
+   "pdf_sha256": "f1680d41add6fa32ecfbc21ae98c0c0fe589de3388914db684263190e23c12e3",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "6.1",
+   "label": "fig:mis_architecture",
+   "title": "Mission architecture (diagram)",
+   "file": "thesis/MIT-thesis-template/figures/ch6_architecture.pdf",
+   "script": "figures/ch6/make_ch6.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/ch6/ch6_architecture.py": "10cbba78c8a51c944c60e2d454c991465d05b704645d207ae306dbfc60173676"
+   },
+   "pdf_sha256": "7a8db0d445bb1858455659c689c362ea159bea8acb236b9bd86d62e4c862f01e",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "not included",
+   "label": "fig:mis_conops",
+   "title": "Concept of operations",
+   "file": "thesis/MIT-thesis-template/figures/ch6_conops.pdf",
+   "script": "figures/ch6/make_ch6.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/ch6/ch6_data.py": "faab74564b54661a1ddb6f6b4330cccc44129679077c23992a459a776dfb20f5",
+    "results/analysis/a06_isolated_robustness.json": "afb6e8f7ed032e2118a8a9b3c14c280f11237852c918d5ae35a3508baa026ed4",
+    "results/analysis/a09_systematics.json": "4c1c137910d96368efdc6105e29e5c9a35f7e8478df06c0cc40e5596400a2546"
+   },
+   "pdf_sha256": "6b7eb75359dac46b2ec267a065f16f021458209262ac57a58109331318a3c4a6",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "not included",
+   "label": "fig:mis_surface_time",
+   "title": "Surface time per outcrop",
+   "file": "thesis/MIT-thesis-template/figures/ch6_surface_time.pdf",
+   "script": "figures/ch6/make_ch6.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/ch6/ch6_data.py": "faab74564b54661a1ddb6f6b4330cccc44129679077c23992a459a776dfb20f5",
+    "results/analysis/a06_isolated_robustness.json": "afb6e8f7ed032e2118a8a9b3c14c280f11237852c918d5ae35a3508baa026ed4",
+    "results/analysis/a09_systematics.json": "4c1c137910d96368efdc6105e29e5c9a35f7e8478df06c0cc40e5596400a2546"
+   },
+   "pdf_sha256": "4883841d70db478dc4f73a4cea256d2ca6997162e1137b422c2566f264207354",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "6.3",
+   "label": "fig:mis_pareto",
+   "title": "Trade-study Pareto front",
+   "file": "thesis/MIT-thesis-template/figures/ch6_pareto.pdf",
+   "script": "figures/ch6/make_ch6.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/ch6/ch6_data.py": "faab74564b54661a1ddb6f6b4330cccc44129679077c23992a459a776dfb20f5",
+    "results/analysis/a06_isolated_robustness.json": "afb6e8f7ed032e2118a8a9b3c14c280f11237852c918d5ae35a3508baa026ed4",
+    "results/analysis/a09_systematics.json": "4c1c137910d96368efdc6105e29e5c9a35f7e8478df06c0cc40e5596400a2546"
+   },
+   "pdf_sha256": "24e5d03e2b22ad38e1406f8866ffc03aec281f5fc10fcf64781a9ffada04d06a",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "not included",
+   "label": "fig:mis_boom",
+   "title": "Boom length trade",
+   "file": "thesis/MIT-thesis-template/figures/ch6_boom.pdf",
+   "script": "figures/ch6/make_ch6.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/ch6/ch6_data.py": "faab74564b54661a1ddb6f6b4330cccc44129679077c23992a459a776dfb20f5",
+    "results/analysis/a06_isolated_robustness.json": "afb6e8f7ed032e2118a8a9b3c14c280f11237852c918d5ae35a3508baa026ed4",
+    "results/analysis/a09_systematics.json": "4c1c137910d96368efdc6105e29e5c9a35f7e8478df06c0cc40e5596400a2546"
+   },
+   "pdf_sha256": "279b777085bf979a3e069d0f412cb11308477aca5293fef959a4cbaf64c9a3f1",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "6.2",
+   "label": "fig:mis_sites",
+   "title": "Candidate sites on the nearside (LOLA hillshade)",
+   "file": "thesis/MIT-thesis-template/figures/ch6_site_map.pdf",
+   "script": "figures/scripts/fig_site_map.py",
+   "command": "make figures",
+   "source_pdf": null,
+   "results": {
+    "figures/inputs/lola_hillshade_nearside.png": "e7d0f1346a449a2c3862ae8e8a7efbc122e15fa6d7d86970a0169f6195d8aae9",
+    "figures/inputs/site_coordinates.csv": "2d02cd0120604c46d57649fefb7c1fa9132cd2705c60dc6fbcbb9268afe35d90"
+   },
+   "pdf_sha256": "f082e9bd625721af7aaf18db9e146a50526e6e11d8d2a9bbfaf8b160df1dd32d",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "7.1",
+   "label": "fig:ai_burial",
+   "title": "Learned vs least-squares error against buried extent",
+   "file": "thesis/MIT-thesis-template/figures/ch7_burial.pdf",
+   "script": "ml/fig_ml.py",
+   "command": "make figures",
+   "source_pdf": "ml/figures/ml_fig1_burial.pdf",
+   "results": {
+    "ml/results/sbi_results.json": "4ced5510c33e496182ba69b7b4e32d6095797f6a8595b9d52cae485f426bda40"
+   },
+   "pdf_sha256": "a364674eb69b94f1dc662b7cf648a40a860933382c39873c0816559fd4eba8c2",
+   "pdfa1b_ready": true
+  },
+  {
+   "figure": "not included",
+   "label": "fig:ai_calib",
+   "title": "Network calibration and the Cramer-Rao check",
+   "file": "thesis/MIT-thesis-template/figures/ch7_calib.pdf",
+   "script": "ml/fig_ml.py",
+   "command": "make figures",
+   "source_pdf": "ml/figures/ml_fig2_calib.pdf",
+   "results": {
+    "ml/results/sbi_results.json": "4ced5510c33e496182ba69b7b4e32d6095797f6a8595b9d52cae485f426bda40"
+   },
+   "pdf_sha256": "bb5bd87cf545d0c5bf04022cccf167eb6b098d026013b1602350b803c96490f8",
+   "pdfa1b_ready": true
+  }
+ ]
+}

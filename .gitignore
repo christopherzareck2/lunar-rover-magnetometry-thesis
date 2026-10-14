@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+# OS
+.DS_Store
+# Package build products and scratch runs
+build/
+dist/
+*.egg-info/
+# Local settings, editors and tool caches
+local.mk
+.env
+.vscode/
+.idea/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# Run logs and scratch output of the studies
+logs/
+*.log
+*.swp
+
+# Simulated training and test sets of the learned estimator (about 350 MB; regenerate with ml/run_all.sh)
+ml/data/
+
+# Raw public NASA/USGS/PDS downloads for the imagery figures (large; see data/external/SOURCES.md)
+data/external/*
+!data/external/SOURCES.md
